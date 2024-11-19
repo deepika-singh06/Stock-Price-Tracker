@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background: url('stock_bg.avif') no-repeat center center/cover; /*  Replace this URL with your background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    
+    background: rgba(90,90,90,0.1);/* Semi-transparent background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Blurs the background behind the sign-up box */
+    box-shadow: 0 0 10px rgba(255,255,255,0.2); /* Adds shadow for a 3D effect */
+}
+
+.signup-box {
+    text-align: center;
+    color: white;
+   
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #00ff51;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow on text for clarity */
+}
+h5 {
+    margin-bottom: 20px;
+    line-height:2rem;
+    color: white;
+    
+}
+h5 a{
+	color:#00ff51;
+	text-decoration: none;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: #ccc;
+}
+
+.input-box input:focus {
+    border-color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding:5px;
+    font-size: 18px;
+    background-color: #00ff51;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00ff51;
+    box-shadow:0 0 25px #00ff51 ;
+}
+
+/* Add a responsive design tweak */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

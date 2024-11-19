@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+   <div class="signup-box">
+     <h2>Registration</h2>
+	   <form action="registerservlet" method="post">
+			<div class="input-box">
+			<input type="text" name="username" id="username" placeholder="Username" required>
+			</div>
+			
+			<div class="input-box">
+			<input type="password" name="password" id="password" placeholder="Password" required>
+			</div>
+			<button class="submit-btn" type="submit">Register</button>
+	   </form>
+	  <h5>Already Registered? <a href="login.jsp" >Login here</a></h5>
+	</div>
+</div>
+</body>
+</html>
